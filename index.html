@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASF Praias — Guia de praias para surfistas no litoral norte de SP | ASF</title>
+<meta name="description" content="Guia interativo das melhores praias para surfar no litoral norte de SP: nível, tipo de fundo, melhor swell e dicas locais para mulheres surfistas.">
+<link rel="canonical" href="https://acarolmourad-commits.github.io/asf-praias/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ASF Praias — Guia de praias do litoral norte">
+<meta property="og:description" content="Encontre a praia ideal para o seu nível de surf.">
+<meta property="og:url" content="https://acarolmourad-commits.github.io/asf-praias/">
+<meta name="theme-color" content="#00A8CC">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"ASF Praias","url":"https://acarolmourad-commits.github.io/asf-praias/","applicationCategory":"SportsApplication","operatingSystem":"Web","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"ASF — Associação Surf Feminino","url":"https://acarolmourad-commits.github.io/asf-app/"}}
+</script>
+<style>
+:root{--primary:#00A8CC;--dark:#0E2439;--purple:#9B59B6;--bg:#F7FBFC;--gray:#5A6B7A}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Outfit',system-ui,sans-serif;background:var(--bg);color:var(--dark)}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #E5EEF2;padding:10px 16px;display:flex;gap:14px;flex-wrap:wrap;z-index:10;justify-content:center}
+nav a{color:var(--primary);text-decoration:none;font-weight:700;font-size:13px}
+nav a.on{color:var(--purple)}
+header{background:linear-gradient(135deg,var(--primary),var(--purple));color:#fff;padding:44px 20px 32px;text-align:center}
+header h1{font-size:clamp(22px,5vw,32px);margin:6px 0}
+header .tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.9}
+header p{opacity:.95;font-size:14px}
+.wrap{max-width:860px;margin:0 auto;padding:24px 16px 60px}
+.filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.filtros button{border:2px solid var(--primary);background:#fff;color:var(--primary);font-weight:700;padding:8px 16px;border-radius:999px;cursor:pointer;font-family:inherit}
+.filtros button.on{background:var(--primary);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 2px 10px rgba(14,36,57,.06)}
+.card h2{font-size:16px;margin-bottom:4px}
+.muted{color:var(--gray);font-size:12.5px}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;margin:6px 6px 0 0;background:#E8F6FA;color:var(--primary)}
+footer{text-align:center;font-size:12.5px;color:var(--gray);padding:24px;border-top:1px solid #E5EEF2}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://acarolmourad-commits.github.io/asf-app/">🏄 ASF App</a>
+<a href="https://acarolmourad-commits.github.io/asf-previsao/">🌊 Previsão</a>
+<a class="on" href="https://acarolmourad-commits.github.io/asf-praias/">🏖️ Praias</a>
+<a href="https://acarolmourad-commits.github.io/asf-treino/">💪 Treino</a>
+<a href="https://acarolmourad-commits.github.io/asf-app/aprender/">📚 Guias</a>
+</nav>
+<header>
+<div class="tag">ASF · Praias</div>
+<h1>Guia de praias do litoral norte</h1>
+<p>Encontre o pico ideal para o seu nível — com dicas de quem surfa lá.</p>
+</header>
+<main class="wrap">
+<div class="filtros">
+<button class="on" data-f="todas">Todas</button>
+<button data-f="iniciante">Iniciante</button>
+<button data-f="intermediario">Intermediário</button>
+<button data-f="avancado">Avançado</button>
+</div>
+<div class="grid" id="grid"></div>
+<p class="muted" style="margin-top:16px">Veja as condições ao vivo no <a href="https://acarolmourad-commits.github.io/asf-previsao/" style="color:var(--primary)">ASF Previsão</a> antes de sair de casa.</p>
+</main>
+<footer>🌊 ASF — Associação Surf Feminino · <a href="https://acarolmourad-commits.github.io/asf-app/praias/melhores-praias-iniciantes-litoral-norte-sp.html" style="color:var(--primary)">Guia completo de praias para iniciantes</a></footer>
+<script>
+const praias=[
+{nome:'Praia da Baleia',cidade:'São Sebastião',nivel:'iniciante',fundo:'areia',swell:'S/SE',dica:'Ondas suaves e previsíveis, ótima para primeira prancha de espuma.'},
+{nome:'Camburizinho',cidade:'São Sebastião',nivel:'iniciante',fundo:'areia',swell:'S/SE',dica:'Cantinho protegido, maré cheia deixa as ondas ainda mais mansas.'},
+{nome:'Boracéia',cidade:'Bertioga',nivel:'iniciante',fundo:'areia',swell:'SE',dica:'Praia extensa, fácil achar espaço longe da crowd.'},
+{nome:'Perequê-Açú',cidade:'Ubatuba',nivel:'iniciante',fundo:'areia',swell:'SE',dica:'Enseada abrigada, escolinhas e comunidade acolhedora.'},
+{nome:'Lagoinha',cidade:'Ubatuba',nivel:'iniciante',fundo:'areia',swell:'S/SE',dica:'Visual lindo e ondas amigáveis na maré certa.'},
+{nome:'Maresias',cidade:'São Sebastião',nivel:'intermediario',fundo:'areia',swell:'S/SE',dica:'Ondas consistentes e crowd forte; respeite a etiqueta no pico.'},
+{nome:'Itamambuca',cidade:'Ubatuba',nivel:'intermediario',fundo:'areia',swell:'E/SE',dica:'Palco de campeonatos; esquerdas e diretas de qualidade.'},
+{nome:'Paúba',cidade:'São Sebastião',nivel:'intermediario',fundo:'areia',swell:'S/SE',dica:'Menos cheia que Maresias, com ondas parecidas.'},
+{nome:'Juquehy',cidade:'São Sebastião',nivel:'intermediario',fundo:'areia',swell:'SE',dica:'Boa formação com swell de sudeste, fundo de areia.'},
+{nome:'Praia Brava (Caraguá)',cidade:'Caraguatatuba',nivel:'avancado',fundo:'areia/pedra',swell:'S',dica:'Ondas fortes e tubulares; só para quem já domina o outside.'}];
+const grid=document.getElementById('grid');
+function render(f){grid.innerHTML='';praias.filter(p=>f==='todas'||p.nivel===f).forEach(p=>grid.insertAdjacentHTML('beforeend',`<div class="card"><h2>${p.nome}</h2><div class="muted">${p.cidade} · fundo de ${p.fundo} · swell ${p.swell}</div><p style="font-size:14px;margin-top:6px">${p.dica}</p><span class="badge">${p.nivel}</span><a class="badge" style="text-decoration:none" href="https://acarolmourad-commits.github.io/asf-previsao/">ver previsão 🌊</a></div>`));}
+document.querySelectorAll('.filtros button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filtros button').forEach(x=>x.classList.remove('on'));b.classList.add('on');render(b.dataset.f);});
+render('todas');
+</script>
+</body>
+</html>
