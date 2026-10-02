@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://acarolmourad-commits.github.io/asf-praias/sitemap.xml
+Sitemap: https://praias.asf.surf/sitemap.xml
